@@ -1,0 +1,35 @@
+body {
+    margin: 0px center;
+    width: 900px;
+    background-color: rgb(214, 233, 176);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(31, 44, 4);
+    margin-left: 100px;
+  
+  }
+  
+    header {
+    height: 100px;
+  }
+     
+    header > img {
+    margin: 10px;
+    float: right;
+    width: 30px;
+    border: none;
+    margin-left: 50px;
+    
+  }
+  
+  header > h1 {
+    margin: 10px;
+    margin-right: 40px;
+    margin-top: 40px;
+    text-align: center;
+    color: blue;
+    }
+     
+
+    }
+      
+
