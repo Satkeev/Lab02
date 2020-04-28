@@ -23,3 +23,22 @@ var cityName = prompt('What city this university located? in Kiev');
         }
 
     }
+
+    var countryName= prompt('Where is Kiev?');
+    if(countryName === 'In Ukraine'){
+     alert('Yes');
+    }   else {
+        alert('Ohh, no');
+        }
+
+    var degreeName = prompt('Did you graduated masters program or no?');
+        if(degreeName.toLowerCase() === 'yes'){
+            alert('Oo, nice!');
+    }  else {
+            if(educationName.toLowerCase() === 'no'){
+                alert('Ohh, sorry');
+    }  else {
+                prompt('please answer with yes or no');   
+
+    } 
+    }
