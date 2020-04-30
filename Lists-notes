@@ -1,0 +1,34 @@
+## Lists   
+
+>There are three types HTML lists: ordered, unordered,and definition.   
+Ordered lists use numbers.   
+Unordered lists use bullets.   
+Ordered lists use numbers.   
+Unordered lists use bullets.   
+Lists can be nested inside one another.   
+
+## Links  
+
+>Links are the defining feature of the web because they allow you to move from one web page to another —   
+enabling the very idea of browsing or surfing.  
+You will commonly come across the following types of links:  
+Links from one website to another   
+Links from one page to another on the same website   
+Links from one part of a web page to another part of the  same page  
+Links that open in a new browser window  
+Links that start up your email program and address a new   email to someone  
+
+>CSS treats each HTML element as if it lives in its own box.  
+You can set several properties that affect the appearance of these boxes. In this chapter you will see how to:  
+Control the dimensions of your boxes   
+Create borders around boxes   
+Set margins and padding for boxes   
+Show and hide boxes   
+
+>CSS treats each HTML element as if it has its own box.    
+You can use CSS to control the dimensions of a box.   
+You can also control the borders, margin and padding  for each box with CSS.  
+It is possible to hide elements using the display and  visibility properties.  
+Block-level boxes can be made into inline boxes, and  inline boxes made into block-level boxes.  
+Legibility can be improved by controlling the width of  boxes containing text and the leading.  
+CSS3 has introduced the ability to create image  borders and rounded borders  
