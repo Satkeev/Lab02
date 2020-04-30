@@ -3,47 +3,54 @@
 var userName = prompt('What is your name?');
    document.write('<h3>' + 'Hello, ' + userName + '<h3');
 
-var educationName = prompt('Did you graduated Kiev Technical university in Kiev?');
-if(educationName.toLowerCase() === 'yes'){
-    alert('This is the best university!');
-}  else {
-    if(educationName.toLowerCase() === 'no'){
-        alert('Ohh, sorry');
-    } else {
-        prompt('please answer with yes or no');
+function education(){   
+    var educationName = prompt('Did you graduated Kiev Technical university in Kiev?');
+    if(educationName.toLowerCase() === 'yes'){
+        alert('This is the best university!');
+    }  else {
+        if(educationName.toLowerCase() === 'no'){
+            alert('Ohh, sorry');
+        } else {
+            prompt('please answer with yes or no');
+        }
     }
 }
 
-var cityName = prompt('What city this university located? in Kiev');
-    if(cityName.toUpperCase() === 'YES'){
-     alert('Its the beautiful city!');
+function city(){
+    var cityName = prompt('What city this university located? in Kiev');
+        if(cityName.toUpperCase() === 'YES'){
+        alert('Its the beautiful city!');
     }   else {
         if(cityName.toUpperCase() ==='NO'){
          alert('Ohh, sorry, but I think in Kiev');
         }
-
     }
+}
 
+function country(){
     var countryName= prompt('Where is Kiev?');
-    if(countryName === 'In Ukraine'){
-     alert('Yes');
+    if(countryName.toLocaleLowerCase === 'in ukraine'){
+        alert('Yes');
     }   else {
         alert('Ohh, no');
-        }
+    }
+}
 
+function degree(){
     var degreeName = prompt('Did you graduated masters program or no?');
         if(degreeName.toLowerCase() === 'yes'){
-            alert('Oo, nice!');
+        alert('Oo, nice!');
     }  else {
-            if(educationName.toLowerCase() === 'no'){
-                alert('Ohh, sorry');
+        if(educationName.toLowerCase() === 'no'){
+        alert('Ohh, sorry');
     }  else {
-                prompt('please answer with yes or no');   
-
+        prompt('please answer with yes or no');
     } 
     }
-   
-     var  i=0;
+}
+
+function numberGame(){
+    var  i=0;
     while(i<=3) { 
         var numberGuesGame = prompt('Guess number?'); 
         numberGuesGame = parseInt(numberGuesGame);
@@ -61,7 +68,9 @@ var cityName = prompt('What city this university located? in Kiev');
          }
     }   
     alert('Your number 50');
+}
 
+function miracle(){
     var a=0;
     var i=0;
     var b=0;
@@ -79,8 +88,17 @@ var cityName = prompt('What city this university located? in Kiev');
         }
         a=a+1;
         alert('Try again pls');
-    }  
-        alert('Wow! Your score is ' + b);
-    
+    } 
+} 
+
+education();
+city();
+country();
+degree();
+numberGame();
+miracle();
+
+alert('Wow! Your score is ' + b);
+
 
     
