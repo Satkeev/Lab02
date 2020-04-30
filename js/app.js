@@ -3,10 +3,15 @@
 var userName = prompt('What is your name?');
    document.write('<h3>' + 'Hello, ' + userName + '<h3');
 
+var correctAnswer = 0;
+
+// Question 1 is working ok
+
 function education(){   
     var educationName = prompt('Did you graduated Kiev Technical university in Kiev?');
     if(educationName.toLowerCase() === 'yes'){
         alert('This is the best university!');
+        correctAnswer++;
     }  else {
         if(educationName.toLowerCase() === 'no'){
             alert('Ohh, sorry');
@@ -16,10 +21,13 @@ function education(){
     }
 }
 
+// Question 2 is working ok
+
 function city(){
     var cityName = prompt('What city this university located? in Kiev');
         if(cityName.toUpperCase() === 'YES'){
         alert('Its the beautiful city!');
+        correctAnswer++;
     }   else {
         if(cityName.toUpperCase() ==='NO'){
          alert('Ohh, sorry, but I think in Kiev');
@@ -27,19 +35,25 @@ function city(){
     }
 }
 
+// Question 3 we had a problem here. Entering 'in ukraine' doesn't register as correct
+
 function country(){
-    var countryName= prompt('Where is Kiev?');
-    if(countryName.toLocaleLowerCase === 'in ukraine'){
+    var countryName = prompt('Where is Kiev?').toLowerCase();
+    if(countryName === 'in ukraine'){
         alert('Yes');
+        correctAnswer++;
     }   else {
         alert('Ohh, no');
     }
 }
 
+// Question 4 worked ok
+
 function degree(){
     var degreeName = prompt('Did you graduated masters program or no?');
         if(degreeName.toLowerCase() === 'yes'){
         alert('Oo, nice!');
+        correctAnswer++;
     }  else {
         if(educationName.toLowerCase() === 'no'){
         alert('Ohh, sorry');
@@ -49,6 +63,8 @@ function degree(){
     }
 }
 
+// Question 5 WAS working ok, but tried to fix the final Alert which was playing at the wrong time and then broke the JS.
+
 function numberGame(){
     var  i=0;
     while(i<=3) { 
@@ -56,6 +72,7 @@ function numberGame(){
         numberGuesGame = parseInt(numberGuesGame);
         if (numberGuesGame === 50){
              alert('Your number 50');
+             correctAnswer++;
              break;
         }  else {
             if (numberGuesGame<50){
@@ -65,30 +82,23 @@ function numberGame(){
                 alert('too high');
                 i=i+1;
             }  
-         }
+        } // else {
+        // alert('The correct number was 50');
+    //     }
     }   
-    alert('Your number 50');
 }
 
+// Question 6 we had a problem. Entering correct answer didn't register as correct
+
 function miracle(){
-    var a=0;
-    var i=0;
-    var b=0;
-    var miraclePlaces = ["Taj Mahal","Petra","Piramids","Grand Canyon","Niagara Falls","Stonehenge"];
-    while(a<6) {
-        var onePlace = prompt('Do you know the one of 6 miracle places in the world?');
-        for (i=0; i<6; i++){
-            if (onePlace === miraclePlaces[i]){
-            alert('Its correct answer');
-            b=b+1;
-            i=i+1;
-        } else {
-            i=i+1;
-        }    
-        }
-        a=a+1;
-        alert('Try again pls');
-    } 
+    var attempts=0;
+    // var i=0;
+    var onePlace = prompt('Do you know the one of 6 miracle places in the world?');
+    var miraclePlaces = ['Taj Mahal','Petra','Pyramids','Grand Canyon','Niagara Falls', 'Stonehenge']
+    while(onePlace !== miraclePlaces && attempts < 6) {
+      attempts++;
+    } alert('Good job!');
+    correctAnswer++;
 } 
 
 education();
@@ -98,7 +108,7 @@ degree();
 numberGame();
 miracle();
 
-alert('Wow! Your score is ' + b);
+alert('Wow! Your score is ' + correctAnswer);
 
 
     
