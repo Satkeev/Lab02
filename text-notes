@@ -1,0 +1,69 @@
+### Headings
+  
+><h1> <h2> <h3> <h4> <h5> <h6>  
+HTML has six "levels" of headings:  
+<h1> is used for main headings  
+<h2> is used for subheadings  
+If there are further sections under the subheadings then the <h3> element is used, and so on...  
+Browsers display the contents of headings at different sizes.    
+The contents of an <h1> element is the largest, and the contents of an <h6> element is the smallest.   
+The exact size at which each browser shows the headings can vary slightly.   
+Users can also adjust the size of text in their browser. You will   
+see how to control the size of text, its color, and the fonts used words
+
+### ParagraPHs
+><p>A paragraph consists of one or more sentences   that form a self-contained unit of discourse.   
+The   start of a paragraph is indicated by a new   line.  
+</p> <p>Text is easier to understand when it is split up   into units of text. For example, a book may have      
+chapters. Chapters can have subheadings. Under   each heading there will be one or more   paragraphs.</p>   
+
+ ### Line breaks
+ 
+ ><p>Venus is the only planet that rotates   clockwise.</p> <hr /> <p>Jupiter is bigger than all the other planets   combined.  
+ </p> chapter-02/horizontal-rules.htmlH tMl  
+ReSult  
+><p>The Earth<br />gets one hundred tons heavier   every day<br />due to falling space dust.  
+</p> chapter-02/line-breaks.htmlH tMl  
+ReSult  
+<hr />  
+To create a break between themes — such as a change of topic in a book or a new scene in a play — you   
+can add a horizontal rule between sections using the <hr /> tag.  
+There are a few elements that do not have any words between an opening and closing tag.   
+They are known as empty elements and they are written differently.  
+An empty element usually has only one tag. Before the closing angled bracket of an empty   
+element there will often be a space and a forward slash character. Some web page authors miss this out but  
+it is a good habit to get into.
+<br />  
+As you have already seen, the browser will automatically show each new paragraph or heading on a new line.   
+But if you wanted to add a line break inside the middle of a paragraph you can use the line break tag <br />.  
+
+## CSS  
+><!DOCTYPE <html>    
+<html>      
+<head>    
+<title>Introducing CSS</title>  
+<link href="css/example.css" type="text/css"     rel="stylesheet" />   
+</head>  
+<body>  
+<h1>From Garden to Plate</h1>  
+<p>A <i>potager</i> is a French term for an     ornamental vegetable or kitchen garden ... </p>   
+<h2>What to Plant</h2>  <p>Plants are chosen as much for their functionality     as for their color and form ... </p>   
+</body>  
+</html>
+body { font-family: Arial, Verdana, sans-serif;} h1, h2 { color: #ee3e80;} p { color: #665544;}
+
+## External CSS
+
+<<link>  
+The <link> element can be used in an HTML document to tell the browser where to find the   
+CSS file used to style the page. It is an empty element (meaning it does not need a closing tag),   
+and it lives inside the <head> element. It should use three attributes:  
+href This specifies the path to the CSS file (which is often placed in a folder called css or styles).  
+type This attribute specifies the type of document being linked to. The value should be text/css.  
+rel This specifies the relationship between the HTML page and the file it is linked to.   
+The value should be stylesheet when linking to a CSS file.  
+An HTML page can use more than one CSS style sheet. To do this it could have  
+a <link> element for every CSS file it uses. For example, some authors use one  
+CSS file to control the presentation (such as fonts and colors) and a second to control the layout.  
+
+
