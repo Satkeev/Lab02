@@ -8,9 +8,9 @@ var correctAnswer = 0;
 // Question 1 is working ok
 
 function education(){   
-    var educationName = prompt('Did you graduated Kiev Technical university in Kiev?');
+    var educationName = prompt('Did I graduate from Kiev Technical University in Kiev?');
     if(educationName.toLowerCase() === 'yes'){
-        alert('This is the best university!');
+        alert('Correct! This is the best university!');
         correctAnswer++;
     }  else {
         if(educationName.toLowerCase() === 'no'){
@@ -24,13 +24,13 @@ function education(){
 // Question 2 is working ok
 
 function city(){
-    var cityName = prompt('What city this university located? in Kiev');
+    var cityName = prompt('Is this University located in Kiev?');
         if(cityName.toUpperCase() === 'YES'){
-        alert('Its the beautiful city!');
+        alert('That\'s true! Kiev is a beautiful city!');
         correctAnswer++;
     }   else {
         if(cityName.toUpperCase() ==='NO'){
-         alert('Ohh, sorry, but I think in Kiev');
+         alert('Ohh, sorry, but it actually is in Kiev.');
         }
     }
 }
@@ -39,8 +39,8 @@ function city(){
 
 function country(){
     var countryName = prompt('Where is Kiev?').toLowerCase();
-    if(countryName === 'in ukraine'){
-        alert('Yes');
+    if(countryName === 'ukraine'){
+        alert('Yes. It\'s a great country.');
         correctAnswer++;
     }   else {
         alert('Ohh, no');
@@ -50,9 +50,9 @@ function country(){
 // Question 4 worked ok
 
 function degree(){
-    var degreeName = prompt('Did you graduated masters program or no?');
+    var degreeName = prompt('Do I have a masters degree?');
         if(degreeName.toLowerCase() === 'yes'){
-        alert('Oo, nice!');
+        alert('Thats correct! I have a masters degree in automatic process.');
         correctAnswer++;
     }  else {
         if(educationName.toLowerCase() === 'no'){
@@ -68,10 +68,10 @@ function degree(){
 function numberGame(){
     var  i=0;
     while(i<=3) { 
-        var numberGuesGame = prompt('Guess number?'); 
+        var numberGuesGame = prompt('I am thinking of a number between 1 and 75. Can you guess it? You have four tries.'); 
         numberGuesGame = parseInt(numberGuesGame);
         if (numberGuesGame === 50){
-             alert('Your number 50');
+             alert('Correct!');
              correctAnswer++;
              break;
         }  else {
@@ -88,27 +88,86 @@ function numberGame(){
     }   
 }
 
-// Question 6 we had a problem. Entering correct answer didn't register as correct
+// Question 6 There are 6 World Wonders. Can you name one?
 
-function miracle(){
-    var attempts=0;
-    // var i=0;
-    var onePlace = prompt('Do you know the one of 6 miracle places in the world?');
-    var miraclePlaces = ['Taj Mahal','Petra','Pyramids','Grand Canyon','Niagara Falls', 'Stonehenge']
-    while(onePlace !== miraclePlaces && attempts < 6) {
-      attempts++;
-    } alert('Good job!');
-    correctAnswer++;
-} 
+function miracles() {
+
+    var worldWonder = ['taj mahal', 'pyramids', 'petra', 'grand canyon', 'stonehenge', 'niagara falls'];
+  
+    for(var i = 0; i < 6; i++){
+  
+      var wonderGuess = prompt('There are six world wonders. Can you name one? You get six tries.');
+  
+    if (wonderGuess.toLowerCase() === 'taj mahal') {
+  
+      alert('Correct! The six world wonders include the Taj Mahal, the Pyramids, Petra, the Grand Canyon, Stonehenge and Niagara Falls. I hope to visit them all.');
+  
+      correctAnswer ++;
+  
+      break;
+  
+    } else if (wonderGuess.toLowerCase() === 'pyramids') {
+  
+      alert('Correct! The six world wonders include the Taj Mahal, the Pyramids, Petra, the Grand Canyon, Stonehenge and Niagara Falls. I hope to visit them all.');
+  
+      correctAnswer ++;
+  
+      break;
+  
+    } else if (wonderGuess.toLowerCase() === 'petra') {
+  
+      alert('Correct! The six world wonders include the Taj Mahal, the Pyramids, Petra, the Grand Canyon, Stonehenge and Niagara Falls. I hope to visit them all.');
+  
+      correctAnswer ++;
+  
+      break;
+
+    } else if (wonderGuess.toLowerCase() === 'stonehenge') {
+  
+        alert('Correct! The six world wonders include the Taj Mahal, the Pyramids, Petra, the Grand Canyon, Stonehenge and Niagara Falls. I hope to visit them all.');
+    
+        correctAnswer ++;
+    
+        break;
+    
+      } else if (wonderGuess.toLowerCase() === 'grand canyon') {
+    
+        alert('Correct! The six world wonders include the Taj Mahal, the Pyramids, Petra, the Grand Canyon, Stonehenge and Niagara Falls. I hope to visit them all.');
+    
+        correctAnswer ++;
+    
+        break;
+  
+    } else if (wonderGuess.toLowerCase() === 'niagara falls') {
+  
+      alert('Correct! The six world wonders include the Taj Mahal, the Pyramids, Petra, the Grand Canyon, Stonehenge and Niagara Falls. I hope to visit them all.');
+  
+      correctAnswer ++;
+  
+      break;
+  
+    } else {
+  
+      alert('Sorry, please try again!');
+  
+    } if (i == '5') {
+  
+      alert('Sorry! The six world wonders include the Taj Mahal, the Pyramids, Petra, the Grand Canyon, Stonehenge and Niagara Falls. I hope to visit them all.')
+  
+    }
+  
+    }
+  
+  }
 
 education();
 city();
 country();
 degree();
 numberGame();
-miracle();
+miracles();
 
-alert('Wow! Your score is ' + correctAnswer);
+alert('Congratulations! Your score is ' + correctAnswer + '. Continue now to see the rest of the site.');
 
 
     
